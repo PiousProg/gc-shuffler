@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# PyInstaller output
+build/
+dist/
+*.spec
+
+# Game files and save states: never commit these
+games/
+*.iso
+*.gcm
+*.rvz
+*.gcz
+*.wbfs
+*.ciso
+*.sav
+*.s0[1-9]
+
+# GUI settings (machine-specific paths)
+gc_shuffler_gui.json
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
