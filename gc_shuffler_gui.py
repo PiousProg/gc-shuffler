@@ -35,7 +35,7 @@ DEFAULTS = {
     "games_dir": "",
     "interval": "60",
     "hours": "3",
-    "boot_wait": "12",
+    "boot_wait": "4",
     "state_delay": "2",
     "load_hotkey": "f1",
     "save_hotkey": "shift+f1",

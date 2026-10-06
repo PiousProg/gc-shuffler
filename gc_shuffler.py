@@ -213,9 +213,9 @@ def build_parser() -> argparse.ArgumentParser:
                         help="seconds of play per game (default: 60)")
     parser.add_argument("--hours", type=float, default=3,
                         help="total session length in hours (default: 3)")
-    parser.add_argument("--boot-wait", type=float, default=12,
+    parser.add_argument("--boot-wait", type=float, default=4,
                         help="seconds to wait for a game to boot before loading "
-                        "its state (default: 12)")
+                        "its state (default: 4)")
     parser.add_argument("--state-delay", type=float, default=2,
                         help="seconds to wait after each save/load hotkey (default: 2)")
     parser.add_argument("--load-hotkey", default="f1",

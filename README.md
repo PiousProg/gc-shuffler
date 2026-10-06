@@ -65,7 +65,7 @@ Stop at any time with `Ctrl+C`; the current game is saved first.
 | `--dolphin` | auto-detect | Path to `Dolphin.exe` |
 | `--interval` | `60` | Seconds of play per game |
 | `--hours` | `3` | Total session length |
-| `--boot-wait` | `12` | Seconds to wait for a game to boot before loading its state |
+| `--boot-wait` | `4` | Seconds to wait for a game to boot before loading its state |
 | `--state-delay` | `2` | Seconds to wait after each save/load hotkey |
 | `--load-hotkey` | `f1` | Dolphin "Load State Slot 1" hotkey |
 | `--save-hotkey` | `shift+f1` | Dolphin "Save State Slot 1" hotkey |
@@ -79,7 +79,7 @@ python gc_shuffler.py --games-dir D:\GC --dolphin "D:\Dolphin\Dolphin.exe" --int
 
 ## Limitations
 
-- Each switch closes and relaunches Dolphin, so expect roughly 12–15 seconds of loading per round rather than an instant swap. Slow-booting games may need a higher `--boot-wait`.
+- Each switch closes and relaunches Dolphin, so each switch takes a few seconds (about 2 s for the game to boot, plus the short `--boot-wait` safety margin) rather than being instant. Slow-booting games or slower PCs may need a higher `--boot-wait`; if a saved state fails to load, increase it.
 - Hotkeys are simulated, so avoid touching the keyboard right as a switch happens.
 - Save states are Dolphin's regular slot 1 states: they will overwrite any manual slot 1 save you have for those games. Back them up first (`Documents\Dolphin Emulator\StateSaves`) if that matters to you.
 - Windows only for now.
