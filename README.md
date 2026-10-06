@@ -84,6 +84,14 @@ python gc_shuffler.py --games-dir D:\GC --dolphin "D:\Dolphin\Dolphin.exe" --int
 - Save states are Dolphin's regular slot 1 states: they will overwrite any manual slot 1 save you have for those games. Back them up first (`Documents\Dolphin Emulator\StateSaves`) if that matters to you.
 - Windows only for now.
 
+## Support
+
+If GC Shuffler is useful to you, help me add **Twitch integration and an OBS overlay** (chat votes to force a switch, current game and timer on stream, and more).
+
+[Support the project on Patreon](https://www.patreon.com/PiousProg)
+
+Starring the repo and sharing it also helps a lot. Thank you!
+
 ## Legal
 
 This project does not include or distribute any game files or Nintendo software. You are responsible for using game dumps you legally own. Not affiliated with or endorsed by Nintendo or the Dolphin project.
